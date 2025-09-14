@@ -11,3 +11,5 @@ Aurore Lacombe est paysanne boulangère à Dienné, le blé est cultivé sur la 
 
 Le point de vente est au 11 route de Poitiers à Dienné ([Maps](https://maps.app.goo.gl/Wa2EMr7tkGS1kTSk6), [OSM](https://www.openstreetmap.org/#map=19/46.442624/0.546959)).
 Il est ouvert le mardi de 15h30 à 19h et le vendredi de 15h30 à 19h.
+
+Vous pouvez nous suivre sur Facebook[https://www.facebook.com/lauroredupaindienne] et Insta[https://www.instagram.com/lauroredupain/] si vous souhaitez des nouvelles régulières.
