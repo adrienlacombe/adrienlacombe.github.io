@@ -33,3 +33,18 @@ This is a Jekyll site. To run it locally:
 - Edit `_layouts/default.html` for styling changes
 
 The site will automatically rebuild when you make changes (live reload enabled).
+
+### Troubleshooting
+
+**Live reload port conflict:**
+If you see "port is in use" errors with live reload, try:
+```bash
+bundle exec jekyll serve
+```
+(without `--livereload`)
+
+**Ruby warnings:**
+The CSV and base64 warnings are fixed in the current Gemfile. If you see them, run:
+```bash
+bundle install
+```
