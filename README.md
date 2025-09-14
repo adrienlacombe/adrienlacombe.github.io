@@ -1,7 +1,15 @@
 # L'Aurore du pain
 
-Aurore Lacombe est paysanne boulangère à Dienné, le blé est cultivé sur la commune de Dienné, le pain est au levain.
+A local bakery website with multilingual support.
 
-Le point de vente est au 11 route de Poitiers à Dienné (Maps[https://maps.app.goo.gl/Wa2EMr7tkGS1kTSk6], OSM[https://www.openstreetmap.org/#map=19/46.442624/0.546959]).
-Il est ouvert le mardi de 15h30 à 19h et le vendredi de 15h30 à 19h.
+## Languages
+- [English](/en/)
+- [Français](/fr/)
 
+## Local Development
+To test locally:
+```bash
+python3 -m http.server 8000
+```
+
+Then visit http://localhost:8000

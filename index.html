@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>L'Aurore du pain - Choose language</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .language-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .language-links a {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #0066cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+    .language-links a:hover {
+      background-color: #0052a3;
+    }
+  </style>
+  <script>
+    (function () {
+      const saved = localStorage.getItem('lang');
+      if (saved === 'fr') location.replace('/fr/index.md');
+      else if (saved === 'en') location.replace('/en/index.md');
+    })();
+  </script>
+</head>
+<body>
+  <h1>L'Aurore du pain</h1>
+  <p>Choisissez votre langue / Choose your language</p>
+  
+  <div class="language-links">
+    <a href="/en/index.md" onclick="localStorage.setItem('lang','en')">English</a>
+    <a href="/fr/index.md" onclick="localStorage.setItem('lang','fr')">Français</a>
+  </div>
+</body>
+</html>
