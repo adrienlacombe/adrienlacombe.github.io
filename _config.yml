@@ -1,0 +1,23 @@
+# Site settings
+title: L'Aurore du pain
+description: A local bakery with organic wheat and sourdough bread
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Collections
+collections:
+  layouts:
+    output: false
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"

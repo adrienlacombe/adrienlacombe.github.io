@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>L'Aurore du pain</title>
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -47,23 +47,37 @@
       margin-top: 20px;
     }
   </style>
+  {% if page.lang == "en" %}
+  <script>
+    (function () {
+      const saved = localStorage.getItem('lang');
+      if (saved === 'fr') {
+        location.replace('/fr/');
+      }
+    })();
+  </script>
+  {% elsif page.lang == "fr" %}
+  <script>
+    (function () {
+      const saved = localStorage.getItem('lang');
+      if (saved === 'en') {
+        location.replace('/en/');
+      }
+    })();
+  </script>
+  {% endif %}
 </head>
 <body>
+  {% if page.lang == "en" %}
   <div class="language-toggle">
-    <a href="/en/index.html" onclick="localStorage.setItem('lang','en')">English</a>
+    <a href="/fr/" onclick="localStorage.setItem('lang','fr')">Français</a>
   </div>
+  {% elsif page.lang == "fr" %}
+  <div class="language-toggle">
+    <a href="/en/" onclick="localStorage.setItem('lang','en')">English</a>
+  </div>
+  {% endif %}
   
-  <h1>L'Aurore du pain</h1>
-  
-  <p>Aurore Lacombe est paysanne boulangère à Dienné, le blé est cultivé sur la commune de Dienné, le pain est au levain.</p>
-  
-  <p>Le point de vente est au 11 route de Poitiers à Dienné 
-    <span class="map-links">
-      (<a href="https://maps.app.goo.gl/Wa2EMr7tkGS1kTSk6">Maps</a>, 
-      <a href="https://www.openstreetmap.org/#map=19/46.442624/0.546959">OSM</a>).
-    </span>
-  </p>
-  
-  <p class="hours">Il est ouvert le mardi de 15h30 à 19h et le vendredi de 15h30 à 19h.</p>
+  {{ content }}
 </body>
 </html>
