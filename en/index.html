@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>L'Aurore du pain</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .language-toggle {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+    .language-toggle a {
+      color: #0066cc;
+      text-decoration: none;
+      padding: 8px 16px;
+      border: 1px solid #0066cc;
+      border-radius: 4px;
+      font-size: 14px;
+      transition: all 0.3s;
+    }
+    .language-toggle a:hover {
+      background-color: #0066cc;
+      color: white;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="language-toggle">
+    <a href="/fr/index.html" onclick="localStorage.setItem('lang','fr')">Français</a>
+  </div>
+  
+  <h1>L'Aurore du pain</h1>
+  
+  <p>This is a local bakery, the wheat is organic and grown here, we make sourdough bread.</p>
+</body>
+</html>
