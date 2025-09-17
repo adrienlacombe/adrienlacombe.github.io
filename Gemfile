@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.0"
+gem "jekyll", "~> 4.4.1"
 gem "minima", "~> 2.5"
 
 # Fix Ruby 3.4.0 warnings
